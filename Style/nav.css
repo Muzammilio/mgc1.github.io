@@ -1,0 +1,243 @@
+:root{
+    --heading: #6c757d;
+    --headingSupport: rgb(191,191,191);
+    --headingsupport: #666;
+    --para: #6c6d70;
+    --para-tint: #e4e4ee;
+    --para-btn: #a1a1a4;
+    --icons-bg: #90acd133;
+    --white: #fff;
+    --black: #212529;
+    --helper: rgb(218,37,29);
+    --helper-tint: rgb(36,24,73);
+    --gradient: linear-gradient(45deg, rgb(218,37,29) 20%,rgb(36,24,73) 100%);
+    --gradientSupport: linear-gradient(90deg,transparent 5%, rgb(218,37,29) 20%,rgb(36,24,73) 80%, transparent 95%);
+    --gradientsupport: -webkit-linear-gradient(0deg, rgb(218,37,29) 0%,rgb(36,24,73) 100%);
+    --shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+}
+
+.logo{
+    width: 11rem;
+    margin-left: 2rem;
+    margin-top: -1rem;
+}
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+    
+}
+.toggle:hover{
+    box-shadow: var(--shadow);
+}
+.toggle span{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: var(--gradientsupport);
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.toggle span:nth-child(1){
+    transform: translateY(-15px);
+    width: 25px;
+    left: 10.4px;
+}
+.toggle.active span:nth-child(1){
+    transform: translateX(0) rotate(45deg);
+    width: 40px;
+    transition-delay: 0.125ms;
+}
+.toggle span:nth-child(2){
+    transform: translateY(15px);
+    width: 15px;
+    left: 10.4px;
+}
+.toggle.active span:nth-child(2){
+    transform: translateX(0) rotate(315deg);
+    width: 40px;
+    transition-delay: 0.25ms;
+}
+.toggle.active span:nth-child(3){
+    transform: translateX(60px);
+}
+.btn{
+padding: 0.5rem 1.5rem;
+border: none;
+display: inline-block;
+margin-top: -1rem;
+text-transform: uppercase;
+color: var(--para-btn);
+font-size: 0.8rem;
+font-weight: 500;
+cursor: pointer;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+}
+.btn:hover{
+   box-shadow: var(--shadow);
+}
+
+
+
+    /* navbar */
+
+
+    /* @media (max-width:1055px){
+        .logo{
+            width: 17rem;
+        }
+    }
+    @media (max-width:1040px){
+        .logo{
+            width: 16rem;
+        }
+    }
+    @media (max-width:1025px){
+        .logo{
+            width: 15rem;
+        }
+    }
+    @media (max-width:1005px){
+        .logo{
+            width: 14rem;
+        }
+    }
+    @media (max-width:370px){
+        .logo{
+            width: 13rem;
+        }
+    }
+    @media (max-width:353px){
+        .logo{
+            width: 12rem;
+        }
+    } */
+    @media(max-width:995px){
+        .btn{
+            margin: 0;
+        }
+    }
+    @media (max-width:335px){
+        .logo{
+            width: 11rem;
+        }
+        .toggle{
+            width: 50px;
+            height: 50px;
+        }
+        .toggle span{
+            width: 30px;
+        }
+        .toggle span:nth-child(1){
+            width: 20px;
+        }
+        .toggle.active span:nth-child(1){
+            width: 30px;
+        }
+        .toggle span:nth-child(2){
+            width: 14px;
+        }
+        .toggle.active span:nth-child(2){
+            width: 30px;
+        }
+    }
+    @media (max-width:320px){
+        .logo{
+            width: 10rem;
+            margin-left: 1.5rem;
+        }
+        .toggle{
+            width: 43px;
+            height: 43px;
+        }
+        .toggle span{
+            width: 23px;
+        }
+        .toggle span:nth-child(1){
+            width: 15px;
+        }
+        .toggle.active span:nth-child(1){
+            width: 24px;
+        }
+        .toggle span:nth-child(2){
+            width: 10px;
+        }
+        .toggle.active span:nth-child(2){
+            width: 24px;
+        }
+    }
+    @media (max-width:305px){
+        .logo{
+            width: 9rem;
+            margin-left: 1rem;
+        }
+    }
+    @media (max-width:254px){
+        .logo{
+            width: 8rem;
+            margin-left: 0.8rem;
+        }
+    }
+    @media (max-width:234px){
+        .logo{
+            width: 7rem;
+            margin-left: 0.6rem;
+        }
+    }
+    @media (max-width:216px){
+        .logo{
+            width: 6rem;
+            margin-left: 0.4rem;
+        }
+    }
+    @media (max-width:196px){
+        .logo{
+            width: 5rem;
+            margin-left: 0.2rem;
+        }
+        .btn{
+            font-size: 0.8rem;
+        }
+    }
+    @media (max-width:177px){
+        .logo{
+            width: 4rem;
+            margin-left: 0;
+        }
+    }
+    @media (max-width:165px){
+        .btn{
+            font-size: 0.7rem;
+        }
+    }
+    @media (max-width:157px){
+        .logo{
+            width: 3rem;
+            margin-left: -0.2rem;
+        }
+        .btn{
+            font-size: 0.6rem;
+        }
+        .toggle{
+            margin-right: -1rem;
+        }
+    }
+    @media (max-width:144px){
+        .btn{
+            font-size: 0.5rem;
+        }
+    }

@@ -1,0 +1,204 @@
+:root{
+    --heading: #6c757d;
+    --headingSupport: rgb(191,191,191);
+    --headingsupport: #666;
+    --para: #6c6d70;
+    --para-tint: #e4e4ee;
+    --para-btn: #a1a1a4;
+    --icons-bg: #90acd133;
+    --white: #fff;
+    --black: #212529;
+    --helper: rgb(218,37,29);
+    --helper-tint: rgb(36,24,73);
+    --gradient: linear-gradient(45deg, rgb(218,37,29) 20%,rgb(36,24,73) 100%);
+    --gradientSupport: linear-gradient(90deg,transparent 5%, rgb(218,37,29) 20%,rgb(36,24,73) 80%, transparent 95%);
+    --gradientsupport: -webkit-linear-gradient(0deg, rgb(218,37,29) 0%,rgb(36,24,73) 100%);
+    --shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+}
+
+
+.header{
+    background-image: url(../../Assets/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.header{
+    background-image: url(../../Assets/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.header-ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0.3rem 0.5rem;
+}
+.telephone,.phone,.email{
+    margin: 0 0.8rem;
+    margin-top: 0.3rem;
+}
+.header-img{
+    width: 1.7rem;
+    margin-top: -0.3rem;
+}
+.header span{
+    color: var(--white);
+    font-weight: 600;
+    /* font-style: italic; */
+}
+
+.right{
+    color: var(--white);
+    cursor: pointer;
+    font-size: 23px;
+    padding: 0 0.5rem;
+    transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+}
+    .fb:hover{
+    color: #4267B2;
+}
+.ig:hover{
+color: #e84393;
+}
+.tt:hover{
+color: #1DA1F2;
+}
+.yt:hover{
+color: #FF0000;
+}
+
+.a-link{
+    text-decoration: none;
+    color: white;
+}
+
+
+    /* header */
+    @media (max-width:255px){
+        .right{
+            padding: 0 0.2rem;
+        }
+        .header li.telephone{
+            font-size: 10.5px;
+            margin-top: 0.1rem;
+        }
+        }
+        @media (max-width:213px){
+            .right{
+                padding: 0 0.1.4rem;
+            }
+            .header li.telephone{
+                font-size: 9px;
+            }
+        }
+        @media (max-width:192px){
+            .right{
+                padding: 0 0.1rem;
+            }
+            .header li.telephone{
+                font-size: 8px;
+                margin-top: 2.7px;
+                margin-left: 0.4rem;
+            }
+        }
+        @media (max-width:165px){
+            .right{
+                padding: 0 0.1rem;
+            }
+            .header li.telephone{
+                font-size: 7px;
+                margin-left: 0.3rem;
+                margin-top: 3.4px;
+            }
+            .telephone .header-img{
+                width: 0.8rem;
+            }
+        }
+        @media (max-width:155px){
+            .right{
+                padding: 0 0.5rem;
+                margin-right: -1rem;
+            }
+            .header li.telephone{
+                font-size: 6px;
+                margin-left: 0.2rem;
+                margin-top: 0.3rem;
+            }
+        }
+        @media (max-width:134px){
+            .right{
+                padding: 0 0.5rem;
+                margin-right: -1rem;
+            }
+            .header li.telephone{
+                font-size: 5px;
+                margin-left: 0.1rem;
+                padding: 0;
+                margin-top: 0.4rem;
+            }
+            .telephone .header-img{
+                width: 0.5rem;
+            }
+        }
+        @media (max-width:455px){
+            .phone{
+                display: none;
+            }
+        }
+        @media (max-width:907px){
+            .mob-drop{
+                margin-left: 0;
+            }
+            .header{
+                background-size: 100% 100%;
+            }
+            .header li{
+                font-size: 11px;
+                margin-top: 0;
+            }
+            .header-img{
+                width: 0.8rem;
+                margin-left: -1.1rem;
+            }
+            .email{
+                display: none;
+            }
+        }
+        @media (max-width:1357px){
+            .telephone{
+                font-size: 15px;
+            }
+            .phone{
+                font-size: 15px;
+            }
+            .email{
+                font-size: 15px;
+            }
+            .header-img{
+                width: 0.8rem;
+                margin-left: -1.1rem;
+            }
+        }
+        @media (max-width:1107px){
+            .telephone{
+                font-size: 11.8px;
+                margin-top: 0.5rem;
+            }
+            .phone{
+                font-size: 11.8px;
+                margin-top: 0.5rem;
+            }
+            .email{
+                font-size: 11.8px;
+                margin-top: 0.5rem;
+            }
+            .header-img{
+                width: 0.8rem;
+                margin-left: -1.1rem;
+            }
+        }
+    
